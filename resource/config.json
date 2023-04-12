@@ -1,7 +1,7 @@
 {
   "openAI": {
-	"orgKey": "org-TBD",
-	"apiKey": "TBD",
+	"orgKey": "x",
+	"apiKey": "x",
 	"model": "text-davinci-003"
   },
   "category": [
@@ -9,5 +9,6 @@
 	"diversity",
 	"equality"
   ],
-  "questions": 3
+  "questions": 3,
+  "text_questions": 1
 }
