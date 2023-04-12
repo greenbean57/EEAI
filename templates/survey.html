@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Employee engagement tool</title>
+	<script src="{{url_for('static', filename='vue.global.js')}}"></script>
+	<link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}">
+	<style>
+		.page-header {
+			margin-top:10px;
+		}
+		.btn-scale {
+			min-width: 44px;
+			width: 6%;
+			text-align: center;
+			font-weight: bold;
+			color: black;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.btn-scale-asc-1, .btn-scale-desc-10 {
+			background-color: #33FF00;
+		}
+
+		.btn-scale-asc-1:hover,
+		.btn-scale-desc-10:hover {
+			background-color: #2CDE00;
+		}
+
+		.btn-scale-asc-2,
+		.btn-scale-desc-9{
+			background-color: #66FF00;
+		}
+
+		.btn-scale-asc-2:hover,
+		.btn-scale-desc-9:hover{
+			background-color: #59DE00;
+		}
+
+		.btn-scale-asc-3,
+		.btn-scale-desc-8 {
+			background-color: #99FF00;
+		}
+
+		.btn-scale-asc-3:hover,
+		.btn-scale-desc-8:hover {
+			background-color: #85DE00;
+		}
+
+		.btn-scale-asc-4,
+		.btn-scale-desc-7 {
+			background-color: #CCFF00;
+		}
+
+		.btn-scale-asc-4:hover,
+		.btn-scale-desc-7:hover {
+			background-color: #B1DE00;
+		}
+
+		.btn-scale-asc-5,
+		.btn-scale-desc-6 {
+			background-color: #FFFF00;
+		}
+
+		.btn-scale-asc-5:hover,
+		.btn-scale-desc-6:hover {
+			background-color: #DEDE00;
+		}
+
+		.btn-scale-asc-6,
+		.btn-scale-desc-5 {
+			background-color: #FFCC00;
+		}
+
+		.btn-scale-asc-6:hover,
+		.btn-scale-desc-5:hover {
+			background-color: #DEB100;
+		}
+
+		.btn-scale-asc-7,
+		.btn-scale-desc-4 {
+			background-color: #FF9900;
+		}
+
+		.btn-scale-asc-7:hover,
+		.btn-scale-desc-4:hover {
+			background-color: #DE8500;
+		}
+
+		.btn-scale-asc-8,
+		.btn-scale-desc-3 {
+			background-color: #FF6600;
+		}
+
+		.btn-scale-asc-8:hover,
+		.btn-scale-desc-3:hover {
+			background-color: #DE5900;
+		}
+
+		.btn-scale-asc-9,
+		.btn-scale-desc-2 {
+			background-color: #FF3300;
+		}
+
+		.btn-scale-asc-9:hover,
+		.btn-scale-desc-2:hover {
+			background-color: #DE2C00;
+		}
+
+		.btn-scale-asc-10,
+		.btn-scale-desc-1 {
+			background-color: #FF0000;
+		}
+
+		.btn-scale-asc-10:hover,
+		.btn-scale-desc-1:hover {
+			background-color: #DE0000;
+		}
+		.btn-scale{
+			border: 1px solid grey;
+		}
+		.btn-scale:hover{
+			background-color: #D3D3D3FF;
+		}
+	</style>
+</head>
+<body>
+<h2>Welcome to employment engagement survey</h2>
+<br>
+<h4>Please answer following questions:</h4>
+<hr class="w-50">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+
+			{% if questions %}
+				{% for i in questions %}
+					<p class="page-header">	{{i}}</p>
+						<div class="chart-scale">
+							<button class="btn btn-scale btn-scale-desc-1">1</button>
+							<button class="btn btn-scale btn-scale-desc-2">2</button>
+							<button class="btn btn-scale btn-scale-desc-3">3</button>
+							<button class="btn btn-scale btn-scale-desc-4">4</button>
+							<button class="btn btn-scale btn-scale-desc-5">5</button>
+							<button class="btn btn-scale btn-scale-desc-6">6</button>
+							<button class="btn btn-scale btn-scale-desc-7">7</button>
+							<button class="btn btn-scale btn-scale-desc-8">8</button>
+							<button class="btn btn-scale btn-scale-desc-9">9</button>
+							<button class="btn btn-scale btn-scale-desc-10">10</button>
+						</div>
+						<div></div>
+
+					{% endfor %}
+
+				{% endif %}
+
+		</div>
+	</div>
+</div>
+
+</body>
+<script>
+
+</script>
+</html>
