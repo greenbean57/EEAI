@@ -217,8 +217,10 @@
             <div class="text-question">
                 {% if text_questions %}
                     {% for i in text_questions %}
-                        {{ i }}
-                        <textarea id="p1" placeholder="Comment..."></textarea>
+                        <div>
+                            {{ i }}
+                            <textarea id="text_ans_{}" placeholder="Comment..."></textarea>
+                        </div>
                     {% endfor %}
                 {% endif %}
             </div>
